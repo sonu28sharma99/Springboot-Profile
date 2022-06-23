@@ -1,0 +1,5 @@
+package com.spring.profile.app.controller;
+
+public class MyController {
+
+}

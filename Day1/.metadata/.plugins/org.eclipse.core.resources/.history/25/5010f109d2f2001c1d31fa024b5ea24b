@@ -1,0 +1,16 @@
+package com.spring.profile.app.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyController {
+	
+	@Value("${my.home.name}")
+	private String myHomeName;
+	
+	@RequestMapping(path = "/", method = RequestMethod.GET)
+	public String welcome() {
+		return "Welcome to " + myHomeName;
+	}
+
+}
